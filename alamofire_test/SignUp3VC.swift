@@ -9,27 +9,35 @@
 import UIKit
 
 class SignUp3VC: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+        
+        func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+            alertController.popoverPresentationController?.sourceView = view
+            alertController.popoverPresentationController?.sourceRect = tableView.cellForRow(at: indexPath as IndexPath)!.frame
+            alertController.addAction(UIAlertAction(title: "", style: .cancel, handler: { _ in
+                self.tableView.deselectRowAtIndexPath(indexPath, animated: false)
+                print("cancel")
+            }))
+            alertController.addAction(UIAlertAction(title: "Item1", style: .default, handler: { _ in
+                self.tableView.deselectRowAtIndexPath(indexPath, animated: false)
+                print("select item1")
+            }))
+            alertController.addAction(UIAlertAction(title: "Item2", style: .Default, handler: { _ in
+                self.tableView.deselectRowAtIndexPath(indexPath, animated: false)
+                print("select item2")
+            }))
+            alertController.addAction(UIAlertAction(title: "Item3", style: .Default, handler: { _ in
+                self.tableView.deselectRowAtIndexPath(indexPath, animated: false)
+                print("select item3")
+            }))
+            
+            presentViewController(alertController, animated: false, completion: nil)
+        }
+}
 }
