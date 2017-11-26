@@ -20,6 +20,10 @@
 		45C50BA71FB4504100246201 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C50BA61FB4504100246201 /* FeedVC.swift */; };
 		45EEAB1D1FB1A5530052F1F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EEAB1C1FB1A5530052F1F4 /* User.swift */; };
 		C3B3ACCF004BE3B2B4C6570A /* Pods_alamofire_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F92E5454DB8E3285FCFE26 /* Pods_alamofire_testTests.framework */; };
+		C7632E391FCB51EA00D08288 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = C7632E361FCB51EA00D08288 /* facebook.png */; };
+		C7632E3A1FCB51EA00D08288 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = C7632E371FCB51EA00D08288 /* instagram.png */; };
+		C7632E3B1FCB51EA00D08288 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = C7632E381FCB51EA00D08288 /* twitter.png */; };
+		C7FC74491FCB4EDB002191F4 /* PopoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FC74481FCB4EDB002191F4 /* PopoverVC.swift */; };
 		F4883AC9BC3E8DE2226FE66F /* Pods_alamofire_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B68B2C3147C450F7F97C9593 /* Pods_alamofire_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +71,10 @@
 		B68B2C3147C450F7F97C9593 /* Pods_alamofire_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alamofire_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F92E5454DB8E3285FCFE26 /* Pods_alamofire_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alamofire_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D87995DF037F9849DB467F /* Pods_alamofire_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alamofire_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7632E361FCB51EA00D08288 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		C7632E371FCB51EA00D08288 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
+		C7632E381FCB51EA00D08288 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		C7FC74481FCB4EDB002191F4 /* PopoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,12 +140,14 @@
 		455C78A01FAB483100408C1F /* alamofire_test */ = {
 			isa = PBXGroup;
 			children = (
+				C7FC744A1FCB50FF002191F4 /* Images */,
 				45EEAB1B1FB1A5370052F1F4 /* user */,
 				455C78A11FAB483100408C1F /* AppDelegate.swift */,
 				455C78A31FAB483100408C1F /* SignInVC.swift */,
 				4557A5711FAC520000FECEA2 /* SignUpVC.swift */,
 				4557A5731FAC836B00FECEA2 /* SignUp2VC.swift */,
 				45C50BA61FB4504100246201 /* FeedVC.swift */,
+				C7FC74481FCB4EDB002191F4 /* PopoverVC.swift */,
 				455C78A51FAB483100408C1F /* Main.storyboard */,
 				455C78A81FAB483100408C1F /* Assets.xcassets */,
 				455C78AA1FAB483100408C1F /* LaunchScreen.storyboard */,
@@ -183,6 +193,16 @@
 				4D25E8D374D4048D1952F08E /* Pods-alamofire_testUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7FC744A1FCB50FF002191F4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C7632E361FCB51EA00D08288 /* facebook.png */,
+				C7632E371FCB51EA00D08288 /* instagram.png */,
+				C7632E381FCB51EA00D08288 /* twitter.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +322,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				455C78AC1FAB483100408C1F /* LaunchScreen.storyboard in Resources */,
+				C7632E391FCB51EA00D08288 /* facebook.png in Resources */,
 				455C78A91FAB483100408C1F /* Assets.xcassets in Resources */,
+				C7632E3B1FCB51EA00D08288 /* twitter.png in Resources */,
+				C7632E3A1FCB51EA00D08288 /* instagram.png in Resources */,
 				455C78A71FAB483100408C1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +505,7 @@
 			files = (
 				45C50BA71FB4504100246201 /* FeedVC.swift in Sources */,
 				455C78A41FAB483100408C1F /* SignInVC.swift in Sources */,
+				C7FC74491FCB4EDB002191F4 /* PopoverVC.swift in Sources */,
 				4557A5721FAC520000FECEA2 /* SignUpVC.swift in Sources */,
 				455C78A21FAB483100408C1F /* AppDelegate.swift in Sources */,
 				45EEAB1D1FB1A5530052F1F4 /* User.swift in Sources */,
